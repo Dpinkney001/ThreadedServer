@@ -14,9 +14,9 @@ client_socket, address = server_socket.accept()
 
 print("Got connection from the client.....{}".format(address))
 msg = client_socket.recv(1024).decode()
-
-
-print (msg)
+while true:
+    
+    print (msg.encode())
 
 client_socket.close()
 
