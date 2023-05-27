@@ -1,5 +1,5 @@
 import threading
-
+import time
 
 def testing():
     print("Line gets executed")
@@ -14,3 +14,4 @@ testing()
 for i in range (0, 5):
     t = threading.Thread(target=testing)
     t.start()
+    t.join()
