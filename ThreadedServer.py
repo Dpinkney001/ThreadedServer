@@ -12,7 +12,9 @@ server_socket.listen(2)
 
 client_socket, address = server_socket.accept()
 
-msg = client_socket.recv(1024)
+print("Got connection from the client.....{}".format(address))
+msg = client_socket.recv(1024).decode()
+
 
 print (msg)
 
